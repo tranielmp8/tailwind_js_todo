@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Todos</title>
+</head>
+<body class="bg-[#352f5b]">
+    <div class="container max-w-sm mx-auto">
+        <header class="text-center text-gray-100 my-4">
+            <h1 class="text-3xl mb-4">Todo List</h1>
+            <form class=" search">
+                <input class="m-auto w-96 px-4 py-2 border rounded-xl form-input focus:text-white focus:outline-none  bg-[rgba(0,0,0,0.2)] border-0 " type="text" name="search" placeholder="search todos">
+            </form>
+        </header>
+
+        <ul class="list-group todos mx-auto text-gray-100 ">
+            <li class="list-group-item flex justify-between items-center p-2 shadow bg-[#423a6f] m-1">
+                <span>test todo</span>
+                <i class="far fa-trash-alt delete cursor-pointer"></i>
+            </li>
+            <li class="list-group-item flex justify-between items-center p-2 shadow bg-[#423a6f] rounded  m-1">
+                <span>GO TO THE STORE</span>
+                <i class="far fa-trash-alt delete cursor-pointer "></i>
+            </li>
+            <li class="list-group-item flex justify-between items-center p-2 shadow bg-[#423a6f] rounded m-1">
+                <span>TAKE A NAP</span>
+                <i class="far fa-trash-alt delete cursor-pointer"></i>
+            </li>
+        </ul>
+
+        <form  class="add text-center my-4">
+            <label class="text-gray-100">Add a new Todo...</label>
+            <input class="text-white m-auto w-96 px-4 py-2 border-0 rounded-xl bg-[rgba(0,0,0,0.2)] focus:outline-none" type="text" name="add">
+        </form>
+
+    </div>
+
+    <script src="app.js" ></script>
+</body>
+</html>
